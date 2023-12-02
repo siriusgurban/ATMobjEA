@@ -61,7 +61,7 @@ function showTable(arr) {
        <tr>
             <th scope="row">${+el[0]+1}</th>
                 <td>${el[1].op}</td>
-                <td ${el[1].amount == 'set' ? ".text-success" : ".text-danger"}>${el[1].amount}</td>
+                <td class="${el[1].op == 'set' ? "text-success" : "text-danger"}" >${el[1].amount}</td>
                 <td>${el[1].date}</td>
         </tr>
        `
